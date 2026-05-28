@@ -14,3 +14,8 @@ print(y_train)
 for i in range(epochs):
     y_pred = w * X_train + b
     loss = np.mean((y_pred - y_train) ** 2)
+    dw = np.mean((y_pred-y_train)*X_train.ravel())
+    db = np.mean(y_pred-y_train)
+    w-= Ir*dw
+    b- Ir*db
+print(f"最终: w={w:.4f}, b={b:.4f}")
