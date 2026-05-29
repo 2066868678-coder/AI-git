@@ -57,3 +57,4 @@ print(f"皮尔逊相关系数 r: {corr:.4f}")
 print(f"决定系数 R²: {r2:.4f}")
 print(f"均方误差 MSE: {mse:.2f}")
 print(f"平均绝对误差 MAE: {mae:.2f}")
+# 123
